@@ -25,6 +25,7 @@ async function getComment() {
         console.error(error);
     }
 }
+
 async function getPost() {
     try {
         return await axios.all([requestPost, requestComment])
