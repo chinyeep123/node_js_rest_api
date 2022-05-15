@@ -44,7 +44,10 @@ async function getPost() {
                     }
                     data.push(new_post);
                 }
-                return data;
+
+                return data.sort(function(a, b) {
+                    return b.total_number_of_comments - a.total_number_of_comments;
+                });
             }))
             .catch(err => {
                 console.log('Error: ', err.message);
