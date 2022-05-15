@@ -8,8 +8,14 @@ Install the npm dependencies
 npm install
 ```
 
-Finally we run the server and test
+Next, run command below to boot it up.
 
 ```bash
 npm run devStart
+```
+
+Finally, we can run the server and test
+
+```bash
+http://localhost:3000
 ```
